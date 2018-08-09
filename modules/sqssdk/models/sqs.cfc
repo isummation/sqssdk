@@ -239,18 +239,18 @@ component singleton{
 		
 		var signatureData = generateSignatureData(
 			requestMethod 		= "#arguments.method#"
-			,hostName			= "sqs.us-east-1.amazonaws.com"
+			,hostName			= "#variables.defaultServiceName#.#variables.defaultRegionName#.amazonaws.com"
 			,requestURI			= "/#arguments.resource#"
 			,requestBody		= arguments.body
 			,requestHeaders		= arguments.headers
 			,requestParams		= arguments.parameters
-			,regionName			= "us-east-1"
+			,regionName			= "#variables.defaultRegionName#"
 			,serviceName		= "sqs"
 			,dateStamp			= "#dateStamp#"
 			,amzDate			= "#timestamp#"
 			,signedPayload		= true
 		);
-		
+
 		// REST CAll
 		http method="#arguments.method#"
 				url="#variables.URLEndPoint#/#arguments.resource#"
@@ -632,7 +632,7 @@ component singleton{
 		}
 
 		// Encode path, but preserve slashes "/"
-		path = replace( urlEncode( path ), "%2F", "/", "all");
+		path = replace( urlEncode2( path ), "%2F", "/", "all");
 
 		return path;
 	}
@@ -770,7 +770,7 @@ component singleton{
 		// First encode parameter names and values 
 		var encodedParams = {};
 		structEach( arguments.queryParams, function(string key, string value) {
-			encodedParams[ urlEncode(arguments.key) ] = urlEncode( arguments.value );
+			encodedParams[ urlEncode2(arguments.key) ] = urlEncode2( arguments.value );
 		});	
 		return encodedParams;
 	}
@@ -846,7 +846,7 @@ component singleton{
 	 * @value string to encode
 	 * @returns URI encoded string
 	 */
-	private string function urlEncode( string value ) {
+	private string function urlEncode2( string value ) {
 		var encodedValue = encodeForURL(arguments.value);
 		// Reverse encoding of tilde "~"
 		encodedValue = replace( encodedValue, encodeForURL("~"), "~", "all" );
