@@ -4,13 +4,13 @@
     "slug":"sqssdk",
     "location":"coldbox-modules/sqssdk#v0.0.1",
     "author":"iSummation Technologies Pvt. Ltd.",
-    "homepage":"https://github.com/coldbox-modules/sqssdk",
-    "documentation":"https://github.com/coldbox-modules/sqssdk",
+    "homepage":"https://github.com/isummation/sqssdk",
+    "documentation":"https://github.com/isummation/sqssdk",
     "repository":{
         "type":"git",
-        "URL":"https://github.com/coldbox-modules/sqssdk"
+        "URL":"https://github.com/isummation/sqssdk"
     },
-    "bugs":"https://github.com/coldbox-modules/sqssdk/issues",
+    "bugs":"https://github.com/isummation/sqssdk/issues",
     "shortDescription":"This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
     "description":"This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
     "type":"modules",
