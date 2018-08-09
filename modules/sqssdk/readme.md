@@ -21,9 +21,9 @@ This SDK will be installed into a directory called `sqssdk` and then the SDK can
 <cfargument name="secretKey" 			required="true">
 <cfargument name="encryption_charset" 	required="false" default="utf-8">
 <cfargument name="ssl" 					required="false" default="false">
-<cfargument name="defaultRegionName		required="false" default="us-east-1",
-<cfargument name="defaultServiceName 	required="false" default="sqs",
-<cfargument name="signatureAlgorithm 	required="false" default="AWS4-HMAC-SHA256",
+<cfargument name="defaultRegionName		required="false" default="us-east-1">
+<cfargument name="defaultServiceName 	required="false" default="sqs">
+<cfargument name="signatureAlgorithm 	required="false" default="AWS4-HMAC-SHA256">
 <cfargument name="hashAlorithm 			required="false" default="SHA256"
 ```
 
