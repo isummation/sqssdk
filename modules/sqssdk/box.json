@@ -1,37 +1,31 @@
 {
-    "name":"Amazon SQS SDK",
-    "version":"0.0.1",
-    "slug":"sqssdk",
-    "location":"coldbox-modules/sqssdk#v0.0.1",
-    "author":"iSummation Technologies Pvt. Ltd.",
-    "homepage":"https://github.com/isummation/sqssdk",
-    "documentation":"https://github.com/isummation/sqssdk",
-    "repository":{
-        "type":"git",
-        "URL":"https://github.com/isummation/sqssdk"
+    "name": "Amazon SQS SDK",
+    "version": "0.0.1",
+    "slug": "sqssdk",
+    "location": "https://github.com/isummation/sqssdk/releases/download/v0.0.1/sqssdk.zip",
+    "author": "Pritesh Patel <pritesh@isummation.com>",
+    "homepage": "https://github.com/isummation/sqssdk",
+    "documentation": "https://github.com/isummation/sqssdk",
+    "repository": {
+        "type": "git",
+        "URL": "https://github.com/isummation/sqssdk"
     },
-    "bugs":"https://github.com/isummation/sqssdk/issues",
-    "shortDescription":"This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
-    "description":"This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
-    "type":"modules",
-    "license":[
-        {
-            "type":"Apache2",
-            "URL":"http://www.apache.org/licenses/LICENSE-2.0"
-        }
-    ],
-    "contributors":[],
-    "dependencies":{},
-    "devDependencies":{
+    "bugs": "https://github.com/isummation/sqssdk/issues",
+    "shortDescription": "This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
+    "description": "This SDK will provide you with Amazon sqs connectivity for any ColdFusion (CFML) application.",
+    "type": "modules",
+    "license": [{
+        "type": "Apache2",
+        "URL": "http://www.apache.org/licenses/LICENSE-2.0"
+    }],
+    "contributors": [],
+    "dependencies": {},
+    "devDependencies": {},
+    "installPaths": {},
+    "scripts": {
+
     },
-    "installPaths":{
-    },
-    "scripts":{
-        "postVersion":"package set location='coldbox-modules/sqssdk#v`package version`'",
-        "onRelease":"publish",
-        "postPublish":"!git push && !git push --tags"
-    },
-    "ignore":[
+    "ignore": [
         "**/.*",
         "tests",
         "builds/**"

@@ -7,7 +7,8 @@ This SDK is ColdBox module which allows you to add Amazon SQS capabilities to yo
 * SQS API Reference: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/Welcome.html
 
 ## Installation 
-For now you can download sqssdk folder and place into modules folder of your coldbox Application.
+
+`box install sqssdk`
 
 
 Then follow either the standalone or module instructions below.
